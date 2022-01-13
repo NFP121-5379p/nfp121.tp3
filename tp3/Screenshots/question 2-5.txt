@@ -1,0 +1,16 @@
+public boolean equals(Object o) {
+    if (o instanceof PileI) {
+      PileI p = (PileI) o;
+      return this.capacite() == p.capacite()
+          && this.hashCode() == p.hashCode();
+    } else
+      return false;
+    }
+Cette methode est fausse parceque 1 != "1" ,
+1 est de type integer alors que "1" est de type String .
+les deux piles sont dites égales si et seulement si elles ont la meme taille, meme capacité, et le meme contenus identiques.
+
+ public boolean equals(Object o) {
+        return this.toString().equals(o.toString());
+    }
+Cette methode, n'est pas correcte, on ne teste pas la taille ni la capacité ni le type de l'objet.
