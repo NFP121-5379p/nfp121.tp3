@@ -125,5 +125,21 @@ public class Pile2Test extends junit.framework.TestCase {
         assertFalse("égalité de deux piles ? ", p1.equals(p2));
 
     }
+        public void testaya() throws question1.PilePleineException
+    {
+        question2.Pile2 pile10 = new question2.Pile2(5);
+        pile10.empiler("a");
+        pile10.empiler(3);
+        pile10.empiler(2);
+        assertEquals("[2, 3, a]", pile10.toString());
+        assertEquals(false, pile10.estPleine());
+        
+        question2.Pile2 pile11 = new question2.Pile2(5);
+        pile11.empiler("a");
+        pile11.empiler(3);
+        pile11.empiler(2);
+        assertEquals(true, pile10.equals(pile11));
+    }
+
 
 }

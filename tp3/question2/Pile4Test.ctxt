@@ -10,4 +10,6 @@ comment2.text=\r\n\ Met\ en\ place\ les\ engagements.\r\n\ \r\n\ M\u00C3\u00A9th
 comment3.params=
 comment3.target=void\ tearDown()
 comment3.text=\r\n\ Supprime\ les\ engagements\r\n\ \r\n\ M\u00C3\u00A9thode\ appel\u00C3\u00A9e\ apr\u00C3\u00A8s\ chaque\ appel\ de\ m\u00C3\u00A9thode\ de\ test.\r\n
-numComments=4
+comment4.params=
+comment4.target=void\ testaya()
+numComments=5
