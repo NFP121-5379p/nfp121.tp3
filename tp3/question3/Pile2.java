@@ -6,16 +6,16 @@ import question1.PileVideException;
 import java.util.Stack;
 
 public class Pile2<T> implements PileI<T>{
-    /** par dÃ©lÃ©gation : utilisation de la class Stack */
+    /** par délégation : utilisation de la class Stack */
     private Stack<T> stk;
-    /** la capacitÃ© de la pile */
+    /** la capacité de la pile */
     private int capacite;
 
-    /** CrÃ©ation d'une pile.
-     * @param taille la "taille maximale" de la pile, doit Ãªtre > 0
+    /** Création d'une pile.
+     * @param taille la "taille maximale" de la pile, doit être > 0
      */
     public Pile2(int taille){
-        // Ã  complÃ©ter
+        // à compléter
            if (taille <= 0){
             taille = CAPACITE_PAR_DEFAUT;
         }
@@ -24,12 +24,12 @@ public class Pile2<T> implements PileI<T>{
     }
 
     public Pile2(){
-        // Ã  complÃ©ter
+        // à compléter
               this(PileI.CAPACITE_PAR_DEFAUT);
     }
 
     public void empiler(T o) throws PilePleineException{
-        // Ã  complÃ©ter
+        // à compléter
           if(estPleine()){
             throw new PilePleineException();
         }
@@ -37,14 +37,14 @@ public class Pile2<T> implements PileI<T>{
     }
 
     public T depiler() throws PileVideException{
-        // Ã  complÃ©ter
+        // à compléter
              if (estVide())
             throw new PileVideException();
         return this.stk.pop();
     }
 
     public T sommet() throws PileVideException{
-        // Ã  complÃ©ter
+        // à compléter
                  if (estVide())
             throw new PileVideException();
         return this.stk.peek();
@@ -112,9 +112,9 @@ public class Pile2<T> implements PileI<T>{
         sb.append("]");
         return sb.toString();
     }
-    // recopier ici toutes les autres mÃ©thodes
-    // qui ne sont pas modifiÃ©es en fonction
-    // du type des Ã©lÃ©ments de la pile
+    // recopier ici toutes les autres méthodes
+    // qui ne sont pas modifiées en fonction
+    // du type des éléments de la pile
 
 }
  // Pile2

@@ -31,7 +31,7 @@ public class Pile2 implements PileI {
     // constructeur fourni
     public Pile2() {
         //this(0);
-        this(CAPACITE_PAR_DEFAUT);
+        this(PileI.CAPACITE_PAR_DEFAUT);
     }
 
     public void empiler(Object o) throws PilePleineException {
@@ -67,7 +67,7 @@ public class Pile2 implements PileI {
      */
     public boolean estVide() {
         // a completer
-        return false;
+        return this.stack.empty();
     }
 
     /**
@@ -77,7 +77,7 @@ public class Pile2 implements PileI {
      */
     public boolean estPleine() {
         // a completer
-        return false;
+        return this.stack.size() == this.capacite;
     }
 
     /**
@@ -104,8 +104,9 @@ public class Pile2 implements PileI {
     public boolean equals(Object o) {
         // a completer
         //return false;
-      
-                
+       if( this== o ){
+            return true;
+        }           
           if(!(o instanceof Pile2)){
             return false;
         }

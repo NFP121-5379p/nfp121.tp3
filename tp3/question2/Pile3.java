@@ -17,7 +17,7 @@ public class Pile3 implements PileI {
       private int capacite;
 
     public Pile3() {
-        this(CAPACITE_PAR_DEFAUT);
+        this(PileI.CAPACITE_PAR_DEFAUT);
     }
 
     public Pile3(int taille) {
@@ -44,8 +44,8 @@ public class Pile3 implements PileI {
          if (estVide()){
             throw new PileVideException();
         }
-        int d = v.lastIndexOf(sommet());    
-        return this.v.remove(d);
+        int l= v.lastIndexOf(sommet());    
+        return this.v.remove(l);
     }
 
     public Object sommet() throws PileVideException {
@@ -99,6 +99,9 @@ public class Pile3 implements PileI {
     public boolean equals(Object o) {
         // à compléter
         //return false;
+        if( this== o ){
+            return true;
+        }
           if(!(o instanceof Pile3)){
             return false;
         }

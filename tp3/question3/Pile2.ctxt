@@ -2,7 +2,7 @@
 comment0.target=Pile2
 comment1.params=taille
 comment1.target=Pile2(int)
-comment1.text=\ Cr\u00C3\u00A9ation\ d'une\ pile.\r\n\ @param\ taille\ la\ "taille\ maximale"\ de\ la\ pile,\ doit\ \u00C3\u00AAtre\ >\ 0\r\n
+comment1.text=\ Cr\u00E9ation\ d'une\ pile.\r\n\ @param\ taille\ la\ "taille\ maximale"\ de\ la\ pile,\ doit\ \u00EAtre\ >\ 0\r\n
 comment10.params=o
 comment10.target=boolean\ equals(java.lang.Object)
 comment11.params=
