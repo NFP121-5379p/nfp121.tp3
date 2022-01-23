@@ -8,7 +8,7 @@ import java.util.Stack;
 public class Pile2 implements PileI {
     /** par delegation : utilisation de la class Stack */
     private Stack<Object> stack;
-
+    
     /** la capacite de la pile */
     private int capacite;
 
